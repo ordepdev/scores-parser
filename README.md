@@ -1,4 +1,4 @@
-# scores-parser
+# scores-parser [![Build Status](https://travis-ci.org/ordepdev/scores-parser.svg?branch=master)](https://travis-ci.org/ordepdev/scores-parser)
 
 Extract soccer results from the web.
 
