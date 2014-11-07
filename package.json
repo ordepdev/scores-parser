@@ -1,6 +1,6 @@
 {
   "name": "scores-parser",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Football results in your cli",
   "repository": {
     "type": "git",
