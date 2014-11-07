@@ -10,12 +10,16 @@
   "scripts": {
     "test": "mocha"
   },
-  "keywords": ["football", "scores"],
+  "keywords": [
+    "football",
+    "scores"
+  ],
   "author": "ordepdev",
   "devDependencies": {
     "request": "^2.45.0",
     "through": "^2.3.6",
-    "trumpet": "^1.7.0"
+    "trumpet": "^1.7.0",
+    "mocha": "^2.0.1"
   },
   "feed": "http://www.livescore.com"
 }
