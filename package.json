@@ -1,0 +1,21 @@
+{
+  "name": "scores-parser",
+  "version": "0.0.1",
+  "description": "Football results in your cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ordepdev/scores-parser.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": ["football", "scores"],
+  "author": "ordepdev",
+  "devDependencies": {
+    "request": "^2.45.0",
+    "through": "^2.3.6",
+    "trumpet": "^1.7.0"
+  },
+  "feed": "http://www.livescore.com"
+}
