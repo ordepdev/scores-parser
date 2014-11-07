@@ -1,4 +1,3 @@
-var ansi    = require('ansi-styles');
 var http    = require('http');
 var pkg     = require('./package');
 var through = require('through');

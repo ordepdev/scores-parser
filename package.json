@@ -1,7 +1,7 @@
 {
   "name": "scores-parser",
   "version": "1.0.0",
-  "description": "Football results in your cli",
+  "description": "extract football results from the web",
   "repository": {
     "type": "git",
     "url": "https://github.com/ordepdev/scores-parser.git"
