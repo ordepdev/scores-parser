@@ -56,7 +56,7 @@ parseResults = function (cb) {
   });
 
   http.get(pkg.feed, function(res) {
-    var res = res.pipe(trumpet);
+    res.pipe(trumpet);
   });
 }
 
