@@ -21,8 +21,12 @@ npm install -g scores-parser
 ``` js
 var scores = require('scores-parser')
 
-scores(function (data) {
-    // handle results
+scores({}, function (data) {
+  // handle results
+})
+
+scores({ date: 'YYYY-MM-DD' }, function (data) {
+  // handle results
 })
 ```
 
