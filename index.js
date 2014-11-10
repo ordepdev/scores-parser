@@ -17,7 +17,12 @@ function push (buf) {
   }
 };
 
-parseResults = function (cb) {
+parseResults = function (options, cb) {
+  var url = pkg.feed;
+  if(options && options.date) {
+    url += '/soccer/' + options.date + '/';
+  }
+  
   trumpet.selectAll('.fs *', function(el) {
     el.createReadStream().pipe(el.createWriteStream({outer: true}));
   });
@@ -55,7 +60,7 @@ parseResults = function (cb) {
     cb(json);
   });
 
-  http.get(pkg.feed, function(res) {
+  http.get(url, function(res) {
     res.pipe(trumpet);
   });
 }
