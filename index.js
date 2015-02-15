@@ -23,27 +23,19 @@ parseResults = function (options, cb) {
     url += '/soccer/' + options.date + '/';
   }
   
-  trumpet.selectAll('.fs *', function(el) {
+  trumpet.selectAll('.row-gray *', function(el) {
     el.createReadStream().pipe(el.createWriteStream({outer: true}));
   });
 
-  trumpet.selectAll('.fd *', function(el) {
-    el.createReadStream().pipe(el.createWriteStream({outer: true}));
-  });
-
-  trumpet.selectAll('.fd', function (row) {
+  trumpet.selectAll('.min', function (row) {
     row.createReadStream().pipe(through(push));
   });
 
-  trumpet.selectAll('.fs', function (row) {
+  trumpet.selectAll('.ply', function (row) {
     row.createReadStream().pipe(through(push));
   });
 
-  trumpet.selectAll('.fh', function (row) {
-    row.createReadStream().pipe(through(push));
-  });
-
-  trumpet.selectAll('.fa', function (row) {
+  trumpet.selectAll('.sco', function (row) {
     row.createReadStream().pipe(through(push));
   });
 
